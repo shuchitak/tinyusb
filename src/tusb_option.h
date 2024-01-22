@@ -524,6 +524,11 @@
 // To avoid GCC compiler warnings when -pedantic option is used (strict ISO C)
 typedef int make_iso_compilers_happy;
 
+// To enable test_mode support by default
+#ifndef TUSB_TEST_MODE_SUPPORT
+  #define TUSB_TEST_MODE_SUPPORT 1
+#endif
+
 #endif /* _TUSB_OPTION_H_ */
 
 /** @} */
